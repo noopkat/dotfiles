@@ -19,7 +19,7 @@ alias weather='curl -4 http://wttr.in/New_York'
 alias moon='curl -4 http://wttr.in/Moon'
 
 # editing and reloading bash profile
-alias ebash='subl ~/.bash_profile'
+alias ebash='vim ~/.bash_profile'
 alias rbash='. ~/.bash_profile'
 
 # colours for `ls` command
