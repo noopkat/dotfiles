@@ -9,7 +9,7 @@ export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GIT_PS1_SHOWCOLORHINTS=true
 
 # pretty prompt
-# I use base-16 'ocean' for my terminal colours http://chriskempson.github.io/base16/#ocean
+# I use base-16 'ocean' for my terminal colours http://chriskempson.com/projects/base16/
 # if you use iTerm grab the colours file here https://github.com/christianbundy/spacegrey-iterm
 export PS1='🦄 🔹\[\e[0;36m\]\[\e[0;36m\] \W\[\033[0;35m\]$(__git_ps1 " (%s)")\[\e[0m\]: '
 
