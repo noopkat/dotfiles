@@ -10,6 +10,7 @@
 " + pathogen
 " + typescript-vim
 " + vim-jsx-improve
+" + vim-multiple-cursors
 "
 " I'm definitely trying to stay minimal and seeing how it goes <3
 
@@ -43,12 +44,28 @@ let g:jsx_ext_required=0
 "============================================================
 " Mappings
 "============================================================
+" ctrl-p plugin shortcut
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+" move between buffers
 map <C-Left> <Esc>:bprev<CR>
 map <C-Right> <Esc>:bnext<CR>
+
+" Nerd Tree toggling
 map <C-b> :NERDTreeToggle<CR>
 
+" move lines up and down
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+inoremap <C-j> <Esc>:m .+1<CR>==gi
+inoremap <C-k> <Esc>:m .-2<CR>==gi
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
+
+" switch to left / right split (mostly for Nerd Tree)
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 "============================================================
 " Start pathogen
 "============================================================
