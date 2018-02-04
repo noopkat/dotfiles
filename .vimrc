@@ -6,7 +6,6 @@
 " + vim-airline
 " + dracula colour theme
 " + nerdtree
-" + vim-bufferline
 " + pathogen
 " + typescript-vim
 " + vim-jsx-improve
@@ -16,7 +15,6 @@
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/vim-airline/plugin/airline.vim
-set laststatus=2 " for airline
 
 "============================================================
 " noopkat settings
@@ -39,8 +37,18 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/* " lol
 let g:ctrlp_show_hidden=1
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif " autoquit if only nerdtree is open
 set noswapfile
-let g:jsx_ext_required=0
+let g:jsx_ext_required = 0
 
+" airline
+let g:airline_theme = 'wombat'
+let g:airline#extensions#tabline#enabled = 0 
+let g:airline#extensions#branch#enabled = 1 
+let g:airline_left_sep = ' ❤  '
+let g:airline_right_sep = ' 🟆  '
+let g:airline_section_warning = '' 
+let g:airline_section_y = '' 
+let g:airline_section_x = '' 
+set laststatus=2 " for airline
 "============================================================
 " Mappings
 "============================================================
@@ -71,3 +79,7 @@ map <C-l> <C-W>l
 "============================================================
 execute pathogen#infect()
 call pathogen#helptags()
+
+set noruler
+set noshowmode
+
