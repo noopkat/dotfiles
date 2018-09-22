@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 BASE_DIR="$HOME/.vim"
 PLUGIN_DIR="$BASE_DIR/bundle"
