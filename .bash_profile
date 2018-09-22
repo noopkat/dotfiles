@@ -19,7 +19,7 @@ export PS1='🦄 \[\e[0;36m\]\[\e[0;36m\] \W\[\033[0;35m\]$(__git_ps1 " (%s)")\[
 
 # aliases
 # weather and the moon
-alias weather='curl -4 http://wttr.in/New_York'
+alias weather='curl -4 http://wttr.in/Seattle'
 alias moon='curl -4 http://wttr.in/Moon'
 
 # editing and reloading bash profile
