@@ -8,7 +8,6 @@ PLUGINS=(
   "kien/ctrlp.vim"
   "vim-airline/vim-airline"
   "vim-airline/vim-airline-themes"
-  "VundleVim/Vundle.vim"
   "scrooloose/nerdtree"
   "tpope/vim-pathogen"
   "terryma/vim-multiple-cursors"
