@@ -37,10 +37,11 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/* " lol
 let g:ctrlp_show_hidden=1
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif " autoquit if only nerdtree is open
 set noswapfile
+autocmd FileType javascript JsPreTmpl html
 let g:jsx_ext_required = 0
 
 " airline
-let g:airline_theme = 'wombat'
+let g:airline_theme = 'dracula'
 let g:airline#extensions#tabline#enabled = 0 
 let g:airline#extensions#branch#enabled = 1 
 let g:airline_left_sep = ' ❤  '
@@ -82,4 +83,5 @@ call pathogen#helptags()
 
 set noruler
 set noshowmode
+set hidden
 
