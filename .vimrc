@@ -85,3 +85,6 @@ set noruler
 set noshowmode
 set hidden
 
+" notify when line has over 80 chars
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
