@@ -1,28 +1,16 @@
 "============================================================
 " Plugins
 "============================================================
-" List of plugins that I use:
-" + ctrlp
-" + vim-airline
-" + dracula colour theme
-" + nerdtree
-" + pathogen
-" + typescript-vim
-" + vim-jsx-improve
-" + vim-multiple-cursors
-"
-" I'm definitely trying to stay minimal and seeing how it goes <3
-
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/vim-airline/plugin/airline.vim
 
 "============================================================
 " noopkat settings
 "============================================================
+set omnifunc=syntaxcomplete#Complete
 syntax on
 color dracula
 set smartindent
-set clipboard=unnamed " use os clipboard
 set shiftwidth=2 " number of spaces when shift indenting
 set tabstop=2 " number of visual spaces per tab
 set softtabstop=2 " number of spaces in tab when editing
