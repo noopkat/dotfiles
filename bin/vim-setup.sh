@@ -16,6 +16,7 @@ PLUGINS=(
   "bigfish/vim-js-context-coloring"
   "neoclide/vim-jsx-improve"
   "posva/vim-vue"
+  "Quramy/vim-js-pretty-template"
 )
 
 mkdir -p $PLUGIN_DIR
